@@ -120,14 +120,8 @@ public class listaEnlazadaSimple {
 					mayor = p.getNext();
 				}
 				p = p.getNext();
-			} 
-			Node u = first;
-			for (int i = 0; i < size-1; i++) {
-				if (u.getContent() == mayor.getContent()) {
-					u.setNext(u.getNext().getNext());
-				} 
-				size--;
-			} 
+ 			} 
+			System.out.println(mayor.getContent());
 			return true;
 		}
 		return false;
