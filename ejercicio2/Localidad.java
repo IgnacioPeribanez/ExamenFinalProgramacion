@@ -1,6 +1,10 @@
 package ejercicio2;
 
-public class Localidad {
+/**
+ * Esta clase actua como una plantilla para un objeto de localidad, con su constructor
+ * los parámetros idLocalidad, localidad, totalDivorcios.
+ */
+public class Localidad implements Comparable<Localidad>{
 	private int idLocalidad;
 	private String localidad;
 	private int totalDivorcios;
@@ -35,4 +39,14 @@ public class Localidad {
 		this.totalDivorcios = totalDivorcios;
 	}
 	
+	@Override
+	public int compareTo(Localidad l) {
+		if (this.totalDivorcios < l.getTotalDivorcios()) {
+			return 1;
+		}else if (this.totalDivorcios > l.getTotalDivorcios()) {
+			return -1;
+		}else {
+			return 0;
+		}
+	}
 }

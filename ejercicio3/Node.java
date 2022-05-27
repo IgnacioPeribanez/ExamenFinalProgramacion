@@ -1,5 +1,9 @@
 package ejercicio3;
 
+/**
+ * Esta clase actua como un nodo, con un atributo int y otro Node, se utiliza para almacenar un int
+ * y se usa en una ListaEnlazadaSimple
+ */
 public class Node {
 	private int content;
 	private Node next;

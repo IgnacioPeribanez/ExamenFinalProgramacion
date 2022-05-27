@@ -1,5 +1,8 @@
 package ejercicio3;
 
+/**
+ * Esta clase actua como una lista de nodos, sirve para organizar esos nodos.
+ **/
 public class listaEnlazadaSimple {
 	private Node first;
 	private int size;

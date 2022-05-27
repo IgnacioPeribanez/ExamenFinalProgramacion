@@ -1,6 +1,12 @@
 package ejercicio3;
 
 public class Main {
+	
+	/**
+	 * Pre: --- 
+	 * Post: Este método se encarga de lanzar el programa y gestionar una 
+	 *		 ListaEnlazadaSimple
+	 */
 	public static void main(String[] arg) {
 		listaEnlazadaSimple l = new listaEnlazadaSimple();
 		Node n1 = new Node(20, null);

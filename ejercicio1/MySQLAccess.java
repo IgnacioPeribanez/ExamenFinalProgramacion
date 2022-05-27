@@ -7,6 +7,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+/**
+ * Esta clase conecta mi paquete de Java con una base de datos de SQL.
+ */
 public class MySQLAccess {
 	private Connection connect = null; 	
 	private PreparedStatement preparedStatement = null;
@@ -29,7 +32,7 @@ public class MySQLAccess {
 	
 	/**
 	 * Pre: --- 
-	 * Post: Este metodo inserta una partida en la base de datos
+	 * Post: Este metodo inserta un registro en la base de datos.
 	 */
 	public void insertRegistro(String letra, String palabra, int linea) throws Exception {
 		try {
@@ -48,10 +51,9 @@ public class MySQLAccess {
 	}
 
 	/**
-	 * Pre: --- Post: cerramos todas las conexiones abiertas, el resultSet y el
-	 * statement. Si no se cierran correctamente, puede ocurrir que las consultas no
-	 * devuelvan el resultado esperado. Además, si dejamos muchas conexiones a la BD
-	 * abiertas podemos llegar a saturarla y no aceptará más conexiones.
+	 * Pre: ---
+	 * Post: Cerramos todas las conexiones abiertas, el resultSet y el
+	 * 		 statement. 
 	 */
 	private void close() {
 		try {
